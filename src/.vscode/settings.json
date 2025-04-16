@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rafal/TrailblazerML/install/trailblazerml/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_rviz/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_nav2/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_description/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_cloud/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_bringup/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/rover_teleop_twist_joy/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/gazebo_viz/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/rafal/TrailblazerML/install/trailblazerml/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_rviz/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_nav2/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_description/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_cloud/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/trailblazer_bringup/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/rover_teleop_twist_joy/lib/python3.10/site-packages",
+        "/home/rafal/TrailblazerML/install/gazebo_viz/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

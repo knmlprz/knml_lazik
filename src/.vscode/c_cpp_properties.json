@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rafal/TrailblazerML/install/multirobot_map_merge/include/**",
+        "/home/rafal/TrailblazerML/install/ldlidar_component/include/**",
+        "/home/rafal/TrailblazerML/install/explore_lite/include/**",
+        "/home/rafal/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/rafal/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/rafal/TrailblazerML/src/explore/include/**",
+        "/home/rafal/TrailblazerML/src/ldrobot-lidar-ros2/ldlidar_component/include/**",
+        "/home/rafal/TrailblazerML/src/map_merge/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
