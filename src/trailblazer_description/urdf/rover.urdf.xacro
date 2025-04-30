@@ -63,7 +63,7 @@
   </joint>
   <link
     name="chassis">
-    <inertial>
+    <!-- <inertial>
       <origin
         xyz="0.00322150223165306 -0.0317835441688463 0.0392262662545424"
         rpy="0 0 0" />
@@ -76,14 +76,15 @@
         iyy="0.158013840900767"
         iyz="1.36293755133581E-06"
         izz="0.0668521247692141" />
-    </inertial>
+    </inertial> -->
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 0.09 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/base_link.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/base_link.STL" /> -->
+        <box size="0.20 0.115 0.225"/>
       </geometry>
       <material
         name="">
@@ -93,17 +94,21 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 0.09 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/base_link.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/base_link.STL" /> -->
+        <box size="0.20 0.115 0.225"/>
       </geometry>
     </collision>
+    <xacro:inertial_box mass="0.5" x="0.20" y="0.115" z="0.225">
+      <origin xyz="0 0.09 0"/>
+    </xacro:inertial_box>
   </link>
   <link
     name="FL_wheel">
-    <inertial>
+    <!-- <inertial>
       <origin
         xyz="-0.0657932903439138 0.00142869200681425 9.9374601122415E-06"
         rpy="0 0 0" />
@@ -116,14 +121,15 @@
         iyy="0.00769928738544249"
         iyz="7.8978424094368E-07"
         izz="0.0076927565336923" />
-    </inertial>
+    </inertial> -->
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/FL_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/FL_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
       <material
         name="">
@@ -134,18 +140,22 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/FL_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/FL_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
     </collision>
+    <xacro:inertial_cylinder mass="0.01" radius="0.035" length="0.025">
+      <origin xyz="0 0 0"/>
+    </xacro:inertial_cylinder>
   </link>
   <joint
     name="FL_wheel_joint"
     type="continuous">
     <origin
-      xyz="0.578691303668632 -0.237965989839832 0.501750000756599"
+      xyz="0.1125 0.035 0.1025"
       rpy="0 0 0" />
     <parent
       link="chassis" />
@@ -156,7 +166,7 @@
   </joint>
   <link
     name="BL_wheel">
-    <inertial>
+    <!-- <inertial>
       <origin
         xyz="-0.0657953215031118 0.00133190879616998 -1.102290957955E-06"
         rpy="0 0 0" />
@@ -169,14 +179,15 @@
         iyy="0.00769944516583351"
         iyz="6.94182413139629E-08"
         izz="0.00769259835014326" />
-    </inertial>
+    </inertial> -->
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/BL_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/BL_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
       <material
         name="">
@@ -187,18 +198,22 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/BL_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/BL_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
     </collision>
+    <xacro:inertial_cylinder mass="0.01" radius="0.035" length="0.025">
+      <origin xyz="0 0 0"/>
+    </xacro:inertial_cylinder>
   </link>
   <joint
     name="BL_wheel_joint"
     type="continuous">
     <origin
-      xyz="0.578691303668647 -0.237965989839099 -0.401750000000183"
+      xyz="0.1125 0.035 -0.1025"
       rpy="0 0 0" />
     <parent
       link="chassis" />
@@ -209,7 +224,7 @@
   </joint>
   <link
     name="FR_wheel">
-    <inertial>
+    <!-- <inertial>
       <origin
         xyz="0.0657913230041458 0.0013308416445233 8.05670440151562E-06"
         rpy="0 0 0" />
@@ -222,14 +237,15 @@
         iyy="0.00769931570657865"
         iyz="-6.97714576728623E-07"
         izz="0.00769272793356072" />
-    </inertial>
+    </inertial> -->
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/FR_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/FR_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
       <material
         name="">
@@ -240,18 +256,22 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/FR_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/FR_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
     </collision>
+    <xacro:inertial_cylinder mass="0.01" radius="0.035" length="0.025">
+      <origin xyz="0 0 0"/>
+    </xacro:inertial_cylinder>
   </link>
   <joint
     name="FR_wheel_joint"
     type="continuous">
     <origin
-      xyz="-0.578691303668549 -0.237965989839575 0.50175"
+      xyz="-0.1125 0.035 0.1025"
       rpy="0 0 0" />
     <parent
       link="chassis" />
@@ -262,7 +282,7 @@
   </joint>
   <link
     name="BR_wheel">
-    <inertial>
+    <!-- <inertial>
       <origin
         xyz="0.0657913365617738 0.00133019561822817 -1.39445307800745E-07"
         rpy="0 0 0" />
@@ -275,14 +295,15 @@
         iyy="0.00769943862075944"
         iyz="-5.04460531278865E-08"
         izz="0.00769260505729232" />
-    </inertial>
+    </inertial> -->
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/BR_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/BR_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
       <material
         name="">
@@ -293,18 +314,22 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 -${pi/2} 0" />
       <geometry>
-        <mesh
-          filename="package://trailblazer_description/meshes/BR_wheel.STL" />
+        <!-- <mesh
+          filename="package://trailblazer_description/meshes/BR_wheel.STL" /> -->
+        <cylinder radius="0.035" length="0.025"/>
       </geometry>
     </collision>
+    <xacro:inertial_cylinder mass="0.01" radius="0.035" length="0.025">
+      <origin xyz="0 0 0"/>
+    </xacro:inertial_cylinder>
   </link>
   <joint
     name="BR_wheel_joint"
     type="continuous">
     <origin
-      xyz="-0.578691303668548 -0.237965989839575 -0.401750000756777"
+      xyz="-0.1125 0.035 -0.1025"
       rpy="0 0 0" />
     <parent
       link="chassis" />

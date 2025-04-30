@@ -5,8 +5,8 @@
             <!-- Wheel Information -->
             <left_joint>FL_wheel_joint</left_joint>
             <right_joint>FR_wheel_joint</right_joint>
-            <wheel_separation>1.17</wheel_separation>
-            <wheel_diameter>0.26</wheel_diameter>
+            <wheel_separation>0.225</wheel_separation>
+            <wheel_diameter>0.065</wheel_diameter>
 
             <!-- Limit -->
             <max_wheel_torque>200</max_wheel_torque>
@@ -27,8 +27,8 @@
             <!-- Wheel Information -->
             <left_joint>BL_wheel_joint</left_joint>
             <right_joint>BR_wheel_joint</right_joint>
-            <wheel_separation>1.17</wheel_separation>
-            <wheel_diameter>0.26</wheel_diameter>
+            <wheel_separation>0.225</wheel_separation>
+            <wheel_diameter>0.065</wheel_diameter>
 
             <!-- Limit -->
             <max_wheel_torque>200</max_wheel_torque>
